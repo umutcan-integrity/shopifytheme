@@ -14055,6 +14055,15 @@ a.link:hover {
   cursor: pointer;
   width: 500px;
   border-radius: 10px;
+  transition: transform 0.3s; 
+}
+
+.grow-shrink:hover {
+  transform: scale(1.1); 
+}
+
+.grow-shrink:active {
+  transform: scale(0.9); 
 }
 
 .button-container {
