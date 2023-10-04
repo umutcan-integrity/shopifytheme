@@ -76,16 +76,19 @@
       }
     });
 
-// her cevap seçildiğinde bir animasyon yapıp diğer soruya geçiyoruz
-    const buttons = document.querySelectorAll(".button");
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        button.classList.add("selected");
-        setTimeout(() => {
-          button.classList.remove("selected");
-          nextButton.click();
-        }, 500);
-      });
+    questionContainer.addEventListener("click", (event) => {
+      const answerButton = event.target;
+      if (answerButton.classList.contains("button")) {
+        if (currentQuestionIndex < questionsAndAnswers.length - 1) {
+          currentQuestionIndex++;
+          showQuestion(currentQuestionIndex);
+          prevButton.removeAttribute("disabled");
+        }
+
+        if (currentQuestionIndex === questionsAndAnswers.length - 1) {
+          nextButton.setAttribute("disabled", true);
+        }
+      }
     });
   </script>
 </body>
