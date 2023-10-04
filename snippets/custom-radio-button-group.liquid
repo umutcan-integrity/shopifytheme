@@ -1,10 +1,9 @@
 <body>
   <div id="question-container">
     <p>Ardayı seviyor musun?</p>
-    <button class="button grow-shrink">Evet</button>
-    <button class="button grow-shrink">Hayır</button>
-    <button class="button grow-shrink">Belirsiz</button>
-
+    <button class="button grow-shrink" onclick="nextQuestion('Evet')">Evet</button>
+    <button class="button grow-shrink" onclick="nextQuestion('Hayır')">Hayır</button>
+    <button class="button grow-shrink" onclick="nextQuestion('Belirsiz')">Belirsiz</button>
   </div>
   <div class="button-container">
     <button
@@ -21,7 +20,7 @@
   <script>
     const questionsAndAnswers = [
       {
-        question: "Ardayı seviyor musun2?",
+        question: "Ardayı seviyor musun?",
         answers: ["Evet", "Hayır", "Belirsiz"]
       },
       {
@@ -56,7 +55,7 @@
       const questionText = `<p>${
         currentQuestion.question
       }</p>`;
-      const answerButtons = currentQuestion.answers.map(answer => `<button class="button">${answer}</button>`).join('');
+      const answerButtons = currentQuestion.answers.map(answer => `<button class="button grow-shrink" onclick="nextQuestion('${answer}')">${answer}</button>`).join('');
 
       questionContainer.innerHTML = questionText + answerButtons;
     }
@@ -65,6 +64,20 @@
       resultContainer.style.display = "block";
       const answersHtml = userAnswers.map(answer => `<li>${answer}</li>`).join('');
       answersList.innerHTML = answersHtml;
+    }
+
+    function nextQuestion(selectedAnswer) {
+      userAnswers.push(selectedAnswer);
+
+      if (currentQuestionIndex < questionsAndAnswers.length - 1) {
+        currentQuestionIndex++;
+        showQuestion(currentQuestionIndex);
+        prevButton.removeAttribute("disabled");
+      } else {
+        nextButton.setAttribute("disabled", true);
+        nextButton.innerHTML = "Testi Bitir";
+        showResults();
+      }
     }
 
     showQuestion(currentQuestionIndex);
@@ -81,33 +94,7 @@
     });
 
     nextButton.addEventListener("click", () => {
-      if (currentQuestionIndex < questionsAndAnswers.length - 1) {
-        currentQuestionIndex++;
-        showQuestion(currentQuestionIndex);
-        prevButton.removeAttribute("disabled");
-      }
-      if (currentQuestionIndex === questionsAndAnswers.length - 1) {
-        nextButton.setAttribute("disabled", true);
-        nextButton.innerHTML = "Testi Bitir";
-      }
-    });
-
-    questionContainer.addEventListener("click", (event) => {
-      const answerButton = event.target;
-      if (answerButton.classList.contains("button")) {
-        const selectedAnswer = answerButton.textContent;
-        userAnswers.push(selectedAnswer);
-
-        if (currentQuestionIndex < questionsAndAnswers.length - 1) {
-          currentQuestionIndex++;
-          showQuestion(currentQuestionIndex);
-          prevButton.removeAttribute("disabled");
-        } else {
-          nextButton.setAttribute("disabled", true);
-          nextButton.innerHTML = "Testi Bitir";
-          showResults();
-        }
-      }
+      nextQuestion('');
     });
   </script>
 </body>

@@ -14041,7 +14041,6 @@ a.link:hover {
 .btn:active {
   background-color: darkblue;
 }
-
 .button {
   background-color: #4CAF50;
   border: none;
@@ -14055,15 +14054,15 @@ a.link:hover {
   cursor: pointer;
   width: 500px;
   border-radius: 10px;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
 .grow-shrink:hover {
-  transform: scale(1.5); 
+  transform: scale(1.2);
 }
 
 .grow-shrink:active {
-  transform: scale(0.5); 
+  transform: scale(0.8);
 }
 
 .button-container {
