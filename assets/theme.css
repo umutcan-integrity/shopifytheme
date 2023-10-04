@@ -14151,3 +14151,14 @@ a.link:hover {
       transform: scale(1);
   }
 }
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #00a000;
+}
