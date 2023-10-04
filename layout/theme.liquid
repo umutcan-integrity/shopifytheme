@@ -53,11 +53,7 @@
     {{ content_for_header }}
   </head>
 
-  <body
-    class="template-{{ request.page_type | handle }}{% if settings.enable_sticky_header %} header-sticky{% endif %}"
-    {% if settings.cart_enable_ajax %}
-    data-enable-cart-ajax="true"
-    {% endif %}>
+  <body class="template-{{ request.page_type | handle }}{% if settings.enable_sticky_header %} header-sticky{% endif %}" {% if settings.cart_enable_ajax %}data-enable-cart-ajax="true"{% endif %}>
     <div class="page">
       <div class="theme-editor-scroll-offset"></div>
 
@@ -66,9 +62,10 @@
       {% section 'header' %}
 
       <main id="main" class="main">
+        {% include 'custom-radio-button-group' %}
+
         {{ content_for_layout }}
       </main>
-      {% include 'custom-radio-button-group' %}
 
       {% section 'footer' %}
       {% section 'popup' %}
