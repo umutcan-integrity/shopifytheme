@@ -62,12 +62,9 @@
       {% section 'header' %}
 
       <main id="main" class="main">
-
-
-        {
         {% include 'custom-radio-button-group' %}
-        { custom-radio-button-group }
-        }
+
+        {{ content_for_layout }}
       </main>
 
       {% section 'footer' %}
