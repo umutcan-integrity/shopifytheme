@@ -78,6 +78,7 @@
     const answersList = document.getElementById("answers-list");
     const progressBar = document.getElementById("progress-bar");
     const progressText = document.getElementById("progress-text");
+    const progressContainer = document.getElementById("progress-container");
 
     function showQuestion(index) {
       const currentQuestion = questionsAndAnswers[index];
@@ -116,6 +117,7 @@
         showQuestion(currentQuestionIndex);
       } else {
         questionContainer.style.display = "none";
+        progressContainer.style.display = "none";
         showResults();
       }
     }
