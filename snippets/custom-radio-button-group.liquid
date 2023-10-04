@@ -1,16 +1,9 @@
 <body>
   <div id="question-container">
-    <p>Ardayı seviyor musun?</p>
-    <button class="button grow-shrink" onclick="nextQuestion('Evet')">Evet</button>
-    <button class="button grow-shrink" onclick="nextQuestion('Hayır')">Hayır</button>
-    <button class="button grow-shrink" onclick="nextQuestion('Belirsiz')">Belirsiz</button>
-  </div>
-  <div class="button-container">
-    <button
-      id="prev-button"
-      class="button"
-      disabled>Önceki Soru</button>
-    <button id="next-button" class="button">Sonraki Soru</button>
+    <p id="question-text">Ardayı seviyor musun?</p>
+    <button class="button grow-shrink" onclick="nextQuestion(this, 'Evet')">Evet</button>
+    <button class="button grow-shrink" onclick="nextQuestion(this, 'Hayır')">Hayır</button>
+    <button class="button grow-shrink" onclick="nextQuestion(this, 'Belirsiz')">Belirsiz</button>
   </div>
   <div id="result-container" style="display: none;">
     <h2>Sonuçlar:</h2>
@@ -70,25 +63,22 @@
       }
     ];
 
-
     let currentQuestionIndex = 0;
     let userAnswers = [];
 
+    const questionTextElement = document.getElementById("question-text");
     const questionContainer = document.getElementById("question-container");
-    const prevButton = document.getElementById("prev-button");
-    const nextButton = document.getElementById("next-button");
     const answerButtons = questionContainer.querySelectorAll(".button");
     const resultContainer = document.getElementById("result-container");
     const answersList = document.getElementById("answers-list");
 
     function showQuestion(index) {
       const currentQuestion = questionsAndAnswers[index];
-      const questionText = `<p>${
-        currentQuestion.question
-      }</p>`;
-      const answerButtons = currentQuestion.answers.map(answer => `<button class="button grow-shrink" onclick="nextQuestion('${answer}')">${answer}</button>`).join('');
-
-      questionContainer.innerHTML = questionText + answerButtons;
+      questionTextElement.textContent = currentQuestion.question;
+      answerButtons.forEach((button, i) => {
+        button.textContent = currentQuestion.answers[i];
+        button.classList.remove("selected");
+      });
     }
 
     function showResults() {
@@ -97,35 +87,21 @@
       answersList.innerHTML = answersHtml;
     }
 
-    function nextQuestion(selectedAnswer) {
+    function nextQuestion(button, selectedAnswer) {
       userAnswers.push(selectedAnswer);
 
       if (currentQuestionIndex < questionsAndAnswers.length - 1) {
         currentQuestionIndex++;
         showQuestion(currentQuestionIndex);
-        prevButton.removeAttribute("disabled");
       } else {
-        nextButton.setAttribute("disabled", true);
-        nextButton.innerHTML = "Testi Bitir";
+        questionContainer.style.display = "none";
         showResults();
       }
+
+// Seçilen butona tik işareti ekler
+      button.classList.add("selected");
     }
 
     showQuestion(currentQuestionIndex);
-
-    prevButton.addEventListener("click", () => {
-      if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        showQuestion(currentQuestionIndex);
-        nextButton.removeAttribute("disabled");
-      }
-      if (currentQuestionIndex === 0) {
-        prevButton.setAttribute("disabled", true);
-      }
-    });
-
-    nextButton.addEventListener("click", () => {
-      nextQuestion('');
-    });
   </script>
 </body>

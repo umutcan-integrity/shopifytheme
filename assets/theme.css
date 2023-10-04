@@ -14055,6 +14055,7 @@ a.link:hover {
   width: 500px;
   border-radius: 10px;
   transition: transform 0.3s;
+  position: relative;
 }
 
 .grow-shrink:hover {
@@ -14120,4 +14121,33 @@ a.link:hover {
 
 #question-container button:active {
   background-color: #3e8e41;
+}
+
+.tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #00a000;
+  border-radius: 50%;
+  display: none;
+}
+
+.button.selected .tick {
+  display: block;
+  animation: tickAnimation 0.5s ease-in-out;
+}
+
+@keyframes tickAnimation {
+  0% {
+      transform: scale(0);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
