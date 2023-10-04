@@ -14159,12 +14159,12 @@ a.link:hover {
   top: 0;
   left: 0;
   z-index: 1;
-  margin-top: var(--announcement-height);
+  margin-top: var(--announcement-height)*2;
 }
 
 .progress-bar {
   width: 0;
-  height: 40px;
+  height: 30px;
   background-color: #00a000;
 }
 
