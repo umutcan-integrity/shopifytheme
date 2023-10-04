@@ -1,1 +1,876 @@
-{"sections":{"f5fd458e-46a2-4d26-bc48-9492fa2d4dc9":{"type":"video-hero","blocks":{"template--21089418543394__f5fd458e-46a2-4d26-bc48-9492fa2d4dc9-heading-1":{"type":"heading","settings":{"title":"HOSGELDINIZ","heading_text_size":64,"text_max_width":40}}},"block_order":["template--21089418543394__f5fd458e-46a2-4d26-bc48-9492fa2d4dc9-heading-1"],"settings":{"video_aspect":"original","desktop_height":100,"mobile_height":100,"video_url":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6c89f1ee99a942f5b95e9d0e14f5bc6d.mp4","alignment":"right_bottom","overlay_shadow":20,"color_text":"#ffffff","color_background_button":"#ffffff","color_text_button":"#181818","color_overlay":"#000000","overlay_opacity":30}},"e4107b59-8bbf-47e1-99ef-8abcf09f09e9":{"type":"custom-liquid","custom_css":["body {background-color: #ffffff; font-family: sans-serif; font-size: 16px;}","h1 {font-size: 24px; margin-top: 20px;}","form {width: 500px; margin: 0 auto;}","select {width: 100%; height: 30px; border: 1px solid #ccc; padding: 5px;}","select option {padding: 5px;}","select option:hover {background-color: #eee;}",".form-group {margin-bottom: 10px;}",".submit-btn {background-color: #000; color: #fff; padding: 10px 20px; font-size: 16px; border: none; cursor: pointer;}",".submit-btn:hover {background-color: #444;}"],"settings":{"custom_liquid":"{% if 1 == 1 %}\n\n  <h1>En Sevdiğin Hayvan<\/h1>\n\n  <form action=\"\/test-app\/submit\" method=\"post\">\n    <select name=\"animal\">\n      <option value=\"maymun\">Maymun<\/option>\n      <option value=\"kedi\">Kedi<\/option>\n      <option value=\"köpek\">Köpek<\/option>\n      <option value=\"kuş\">Kuş<\/option>\n    <\/select>\n    <input type=\"submit\" value=\"Gönder\">\n  <\/form>\n\n  {% if request.post %}\n    <p>En sevdiğin hayvan: {{ request.post.animal }}<\/p>\n  {% endif %}\n\n{% endif %}"}},"slideshow-1":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"desktop_image":"shopify:\/\/shop_images\/brightly-colored-gift-box.jpg","mobile_image":"shopify:\/\/shop_images\/gift-box-curly-ribbon.jpg","focal_point":"center_center","mobile_focal_point":"center_center","title":"HOŞGELDİNİZ","subheading":"<p>KENDİNİZE EN UYGUN KUTUYU SEÇEREK BAŞLAYIN<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"KESFET","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"slide-2":{"type":"slide","settings":{"desktop_image":"shopify:\/\/shop_images\/brightly-colored-gift-box.jpg","mobile_image":"shopify:\/\/shop_images\/gift-box-curly-ribbon.jpg","focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1","slide-2"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"text-columns-with-images":{"type":"text-columns-with-images","blocks":{"column-1":{"type":"column","settings":{"heading":"Feature heading","subheading":"<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>","text_max_width":42,"link":"","link_text":"Read more"}},"column-2":{"type":"column","settings":{"heading":"Feature heading","subheading":"<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>","text_max_width":42,"link":"","link_text":"Read more"}},"column-3":{"type":"column","settings":{"heading":"Feature heading","subheading":"<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>","text_max_width":42,"link":"","link_text":"Read more"}},"column-4":{"type":"column","settings":{"heading":"Feature heading","subheading":"<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>","text_max_width":42,"link":"","link_text":"Read more"}}},"block_order":["column-1","column-2","column-3","column-4"],"settings":{"columns":4,"image_shape":"round","text_alignment":"center","section_contrast":true}},"image-with-text-1":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"title":"Image with text","text_max_width":32}},"subheading":{"type":"subheading","settings":{"subheading":"<p>Use these sections to promote a particular feature with editorial photography.<\/p>","text_max_width":32}},"button":{"type":"button","settings":{"link":"https:\/\/fluorescent.co\/help\/spark\/image-with-text","link_text":"Learn more"}}},"block_order":["heading","subheading","button"],"settings":{"image_position":"right","image_width":"half","aspect_ratio":"natural","text_alignment":"left","section_contrast":false}},"logo-list":{"type":"logo-list","blocks":{"logo-1":{"type":"logo","settings":{"link":""}},"logo-2":{"type":"logo","settings":{"link":""}},"logo-3":{"type":"logo","settings":{"link":""}},"logo-4":{"type":"logo","settings":{"link":""}},"logo-5":{"type":"logo","settings":{"link":""}}},"block_order":["logo-1","logo-2","logo-3","logo-4","logo-5"],"settings":{"columns":5,"gutter_spacing":20,"title":"As featured in","section_contrast":false}},"slideshow-2":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"left_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"image-with-features":{"type":"image-with-features","blocks":{"heading":{"type":"heading","settings":{"title":"Images with Features","text_max_width":32}},"feature-1":{"type":"feature","settings":{"image_shape":"round","heading":"Example heading","subheading":"<p>Use these small paragraph blocks to feature various aspects about a product. You can add up to three of these blocks and each can have an image associated with them.<\/p>","text_max_width":32}},"feature-2":{"type":"feature","settings":{"image_shape":"round","heading":"Example heading","subheading":"<p>Use these small paragraph blocks to feature various aspects about a product. You can add up to three of these blocks and each can have an image associated with them.<\/p>","text_max_width":32}}},"block_order":["heading","feature-1","feature-2"],"settings":{"image_width":"half","aspect_ratio":"natural","text_position":"left","text_alignment":"left","section_contrast":false}},"quote":{"type":"quote","blocks":{"quote":{"type":"quote","settings":{"quote":"<p>\"Absolutely unparalleled products and service. I'm confident that this store will be the next big thing in its industry, and that its products will be timeless.\"<\/p>","author":"Steve Jordans","text_max_width":48}}},"block_order":["quote"],"settings":{"timer":7,"image_shape":"round","section_contrast":false}},"slideshow-3":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"slide-2":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1","slide-2"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"image-with-text-2":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"title":"Image with text","text_max_width":32}},"subheading":{"type":"subheading","settings":{"subheading":"<p>Use these sections to promote a particular feature with editorial photography.<\/p>","text_max_width":32}},"button":{"type":"button","settings":{"link":"https:\/\/fluorescent.co\/help\/spark\/image-with-text","link_text":"Learn more"}}},"block_order":["heading","subheading","button"],"settings":{"image_position":"right","image_width":"half","aspect_ratio":"natural","text_alignment":"left","section_contrast":false}},"featured-collection":{"type":"featured-collection","settings":{"collection":"","columns":3,"title":"Featured collection","subheading":"","link_text":"","text_max_width":36,"aspect_ratio":"natural","section_contrast":false}},"slideshow-4":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"slide-2":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1","slide-2"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"featured-product":{"type":"featured-product","blocks":{"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"border":{"type":"border","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"show_labels":true,"variant_popup_option":"Size","variant_popup_text":"Size guide","variant_popup_page":""}},"quantity_selector":{"type":"quantity_selector","settings":{"show_labels":true}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true}}},"block_order":["title","price","border","variant_picker","quantity_selector","buy_buttons"],"settings":{"product":"","enable_product_lightbox":true,"enable_video_looping":true,"section_contrast":false}},"testimonials":{"type":"testimonials","blocks":{"testimonial-1":{"type":"testimonial","settings":{"heading":"Amazing product!","testimonial":"<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>","author":"Author's name","text_max_width":42}},"testimonial-2":{"type":"testimonial","settings":{"heading":"Amazing product!","testimonial":"<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>","author":"Author's name","text_max_width":42}},"testimonial-3":{"type":"testimonial","settings":{"heading":"Amazing product!","testimonial":"<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>","author":"Author's name","text_max_width":42}}},"block_order":["testimonial-1","testimonial-2","testimonial-3"],"settings":{"columns":3,"title":"","subheading":"","text_alignment":"left","section_contrast":false}},"slideshow-5":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"slide-2":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1","slide-2"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"image-with-text-3":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"title":"Image with text","text_max_width":32}},"subheading":{"type":"subheading","settings":{"subheading":"<p>Use these sections to promote a particular feature with editorial photography.<\/p>","text_max_width":32}},"button":{"type":"button","settings":{"link":"https:\/\/fluorescent.co\/help\/spark\/image-with-text","link_text":"Learn more"}}},"block_order":["heading","subheading","button"],"settings":{"image_position":"right","image_width":"half","aspect_ratio":"natural","text_alignment":"center","section_contrast":false}},"questions":{"type":"questions","blocks":{"question-1":{"type":"question","settings":{"title":"This is an example of a question that a customer might ask","answer":"<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>","author":""}},"question-2":{"type":"question","settings":{"title":"This is an example of a question that a customer might ask","answer":"<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>","author":""}},"question-3":{"type":"question","settings":{"title":"This is an example of a question that a customer might ask","answer":"<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>","author":""}},"question-4":{"type":"question","settings":{"title":"This is an example of a question that a customer might ask","answer":"<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>","author":""}}},"block_order":["question-1","question-2","question-3","question-4"],"settings":{"section_title":"Questions","subheading":"","section_contrast":false}},"slideshow-6":{"type":"slideshow","blocks":{"slide-1":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"slide-2":{"type":"slide","settings":{"focal_point":"center_center","mobile_focal_point":"center_center","title":"Slideshow","subheading":"<p>Use this section to make a bold statement<\/p>","heading_text_size":64,"overlay_shadow":10,"max_width_subheading":40,"link_text":"Learn more","link":"https:\/\/fluorescent.co\/help\/spark\/slideshow","alignment":"center_center","color_text":"#ffffff","color_text_button":"#181818","color_background_button":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["slide-1","slide-2"],"settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"duration_autoplay":6,"color_dot":"#ffffff"}},"social-proof":{"type":"social-proof","blocks":{"post-1":{"type":"post","settings":{"link":"","likes":"","account":"","caption":""}},"post-2":{"type":"post","settings":{"link":"","likes":"","account":"","caption":""}},"post-3":{"type":"post","settings":{"link":"","likes":"","account":"","caption":""}}},"block_order":["post-1","post-2","post-3"],"settings":{"columns":3,"title":"Social proof","subheading":"<p>Use this Section to display your favourite social images.<\/p>","text_max_width":42,"aspect_ratio":"natural","like_color":"#c71b1b","section_contrast":false}},"87e35f0b-5de3-4190-a618-9f4b73eec084":{"type":"custom-liquid","custom_css":[".all {background-color: #bebebe; border-radius: 15px;}",".question {background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); margin: 20px auto; max-width: 400px; text-align: center; font-family: sans-serif; font-size: 18px; border: 2px solid #007bff; box-sizing: border-box;}",".answer {cursor: pointer; padding: 10px; transition: background-color 0.3s ease-in-out;}",".answer:hover {background-color: #787878;}",".selected {background-color: #007bff; color: #fff;}","body {background-size: cover;}"],"settings":{"custom_liquid":"{% if 1 == 1 %}\n <div class=\"all\">\n<h1>Hangi meyveyi tercih edersiniz?<\/h1>\n\n<ul class=\"answers\">\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Elma')\">\n        <span>Elma<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Muz')\">\n        <span>Muz<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Portakal')\">\n        <span>Portakal<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Çilek')\">\n        <span>Çilek<\/span>\n    <\/li>\n<\/ul>\n\n<script>\n    function selectAnswer(answerElement, url) {\n        const answerItems = document.querySelectorAll('.answer');\n        answerItems.forEach(item => {\n            item.classList.remove('selected');\n        });\n        answerElement.classList.add('selected');\n\n        \/\/ Tarayıcıyı yeni bir URL'ye yönlendir.\n        window.location.href = url;\n    }\n<\/script>\n<\/div>\n{% endif %}"}}},"order":["f5fd458e-46a2-4d26-bc48-9492fa2d4dc9","e4107b59-8bbf-47e1-99ef-8abcf09f09e9","slideshow-1","text-columns-with-images","image-with-text-1","logo-list","slideshow-2","image-with-features","quote","slideshow-3","image-with-text-2","featured-collection","slideshow-4","featured-product","testimonials","slideshow-5","image-with-text-3","questions","slideshow-6","social-proof","87e35f0b-5de3-4190-a618-9f4b73eec084"]}
+{
+  "sections": {
+    "f5fd458e-46a2-4d26-bc48-9492fa2d4dc9": {
+      "type": "video-hero",
+      "blocks": {
+        "template--21089418543394__f5fd458e-46a2-4d26-bc48-9492fa2d4dc9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "HOSGELDINIZ",
+            "heading_text_size": 64,
+            "text_max_width": 40
+          }
+        }
+      },
+      "block_order": [
+        "template--21089418543394__f5fd458e-46a2-4d26-bc48-9492fa2d4dc9-heading-1"
+      ],
+      "settings": {
+        "video_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "video_url": "https:\/\/www.google.com\/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fkeychain-box-opener&psig=AOvVaw12JUIhwJjpQBlb0JPed8v8&ust=1696531983951000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKD3ityI3YEDFQAAAAAdAAAAABAE",
+        "alignment": "right_bottom",
+        "overlay_shadow": 20,
+        "color_text": "#ffffff",
+        "color_background_button": "#ffffff",
+        "color_text_button": "#181818",
+        "color_overlay": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "slideshow-1": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/brightly-colored-gift-box.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/gift-box-curly-ribbon.jpg",
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "HOŞGELDİNİZ",
+            "subheading": "<p>KENDİNİZE EN UYGUN KUTUYU SEÇEREK BAŞLAYIN<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "KESFET",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/brightly-colored-gift-box.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/gift-box-curly-ribbon.jpg",
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "text-columns-with-images": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "heading": "Feature heading",
+            "subheading": "<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+            "text_max_width": 42,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "heading": "Feature heading",
+            "subheading": "<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+            "text_max_width": 42,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "heading": "Feature heading",
+            "subheading": "<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+            "text_max_width": 42,
+            "link": "",
+            "link_text": "Read more"
+          }
+        },
+        "column-4": {
+          "type": "column",
+          "settings": {
+            "heading": "Feature heading",
+            "subheading": "<p>Tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+            "text_max_width": 42,
+            "link": "",
+            "link_text": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column-4"
+      ],
+      "settings": {
+        "columns": 4,
+        "image_shape": "round",
+        "text_alignment": "center",
+        "section_contrast": true
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_max_width": 32
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
+            "link_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "button"
+      ],
+      "settings": {
+        "image_position": "right",
+        "image_width": "half",
+        "aspect_ratio": "natural",
+        "text_alignment": "left",
+        "section_contrast": false
+      }
+    },
+    "logo-list": {
+      "type": "logo-list",
+      "blocks": {
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo-2": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo-3": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo-4": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo-5": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo-1",
+        "logo-2",
+        "logo-3",
+        "logo-4",
+        "logo-5"
+      ],
+      "settings": {
+        "columns": 5,
+        "gutter_spacing": 20,
+        "title": "As featured in",
+        "section_contrast": false
+      }
+    },
+    "slideshow-2": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "left_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "image-with-features": {
+      "type": "image-with-features",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Images with Features",
+            "text_max_width": 32
+          }
+        },
+        "feature-1": {
+          "type": "feature",
+          "settings": {
+            "image_shape": "round",
+            "heading": "Example heading",
+            "subheading": "<p>Use these small paragraph blocks to feature various aspects about a product. You can add up to three of these blocks and each can have an image associated with them.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "feature-2": {
+          "type": "feature",
+          "settings": {
+            "image_shape": "round",
+            "heading": "Example heading",
+            "subheading": "<p>Use these small paragraph blocks to feature various aspects about a product. You can add up to three of these blocks and each can have an image associated with them.<\/p>",
+            "text_max_width": 32
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "feature-1",
+        "feature-2"
+      ],
+      "settings": {
+        "image_width": "half",
+        "aspect_ratio": "natural",
+        "text_position": "left",
+        "text_alignment": "left",
+        "section_contrast": false
+      }
+    },
+    "quote": {
+      "type": "quote",
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>\"Absolutely unparalleled products and service. I'm confident that this store will be the next big thing in its industry, and that its products will be timeless.\"<\/p>",
+            "author": "Steve Jordans",
+            "text_max_width": 48
+          }
+        }
+      },
+      "block_order": [
+        "quote"
+      ],
+      "settings": {
+        "timer": 7,
+        "image_shape": "round",
+        "section_contrast": false
+      }
+    },
+    "slideshow-3": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_max_width": 32
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
+            "link_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "button"
+      ],
+      "settings": {
+        "image_position": "right",
+        "image_width": "half",
+        "aspect_ratio": "natural",
+        "text_alignment": "left",
+        "section_contrast": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "columns": 3,
+        "title": "Featured collection",
+        "subheading": "",
+        "link_text": "",
+        "text_max_width": 36,
+        "aspect_ratio": "natural",
+        "section_contrast": false
+      }
+    },
+    "slideshow-4": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "border": {
+          "type": "border",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_labels": true,
+            "variant_popup_option": "Size",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "border",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "product": "",
+        "enable_product_lightbox": true,
+        "enable_video_looping": true,
+        "section_contrast": false
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Amazing product!",
+            "testimonial": "<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>",
+            "author": "Author's name",
+            "text_max_width": 42
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Amazing product!",
+            "testimonial": "<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>",
+            "author": "Author's name",
+            "text_max_width": 42
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Amazing product!",
+            "testimonial": "<p>\"Add customer reviews and testimonials to showcase your store’s happy customers.\"<\/p>",
+            "author": "Author's name",
+            "text_max_width": 42
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3"
+      ],
+      "settings": {
+        "columns": 3,
+        "title": "",
+        "subheading": "",
+        "text_alignment": "left",
+        "section_contrast": false
+      }
+    },
+    "slideshow-5": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "image-with-text-3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_max_width": 32
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p>Use these sections to promote a particular feature with editorial photography.<\/p>",
+            "text_max_width": 32
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/fluorescent.co\/help\/spark\/image-with-text",
+            "link_text": "Learn more"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "button"
+      ],
+      "settings": {
+        "image_position": "right",
+        "image_width": "half",
+        "aspect_ratio": "natural",
+        "text_alignment": "center",
+        "section_contrast": false
+      }
+    },
+    "questions": {
+      "type": "questions",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "This is an example of a question that a customer might ask",
+            "answer": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>",
+            "author": ""
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "This is an example of a question that a customer might ask",
+            "answer": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>",
+            "author": ""
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "This is an example of a question that a customer might ask",
+            "answer": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>",
+            "author": ""
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "This is an example of a question that a customer might ask",
+            "answer": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4"
+      ],
+      "settings": {
+        "section_title": "Questions",
+        "subheading": "",
+        "section_contrast": false
+      }
+    },
+    "slideshow-6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "center_center",
+            "mobile_focal_point": "center_center",
+            "title": "Slideshow",
+            "subheading": "<p>Use this section to make a bold statement<\/p>",
+            "heading_text_size": 64,
+            "overlay_shadow": 10,
+            "max_width_subheading": 40,
+            "link_text": "Learn more",
+            "link": "https:\/\/fluorescent.co\/help\/spark\/slideshow",
+            "alignment": "center_center",
+            "color_text": "#ffffff",
+            "color_text_button": "#181818",
+            "color_background_button": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "duration_autoplay": 6,
+        "color_dot": "#ffffff"
+      }
+    },
+    "social-proof": {
+      "type": "social-proof",
+      "blocks": {
+        "post-1": {
+          "type": "post",
+          "settings": {
+            "link": "",
+            "likes": "",
+            "account": "",
+            "caption": ""
+          }
+        },
+        "post-2": {
+          "type": "post",
+          "settings": {
+            "link": "",
+            "likes": "",
+            "account": "",
+            "caption": ""
+          }
+        },
+        "post-3": {
+          "type": "post",
+          "settings": {
+            "link": "",
+            "likes": "",
+            "account": "",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "post-1",
+        "post-2",
+        "post-3"
+      ],
+      "settings": {
+        "columns": 3,
+        "title": "Social proof",
+        "subheading": "<p>Use this Section to display your favourite social images.<\/p>",
+        "text_max_width": 42,
+        "aspect_ratio": "natural",
+        "like_color": "#c71b1b",
+        "section_contrast": false
+      }
+    },
+    "87e35f0b-5de3-4190-a618-9f4b73eec084": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".all {background-color: #bebebe; border-radius: 15px;}",
+        ".question {background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); margin: 20px auto; max-width: 400px; text-align: center; font-family: sans-serif; font-size: 18px; border: 2px solid #007bff; box-sizing: border-box;}",
+        ".answer {cursor: pointer; padding: 10px; transition: background-color 0.3s ease-in-out;}",
+        ".answer:hover {background-color: #787878;}",
+        ".selected {background-color: #007bff; color: #fff;}",
+        "body {background-size: cover;}"
+      ],
+      "settings": {
+        "custom_liquid": "{% if 1 == 1 %}\n <div class=\"all\">\n<h1>Hangi meyveyi tercih edersiniz?<\/h1>\n\n<ul class=\"answers\">\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Elma')\">\n        <span>Elma<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Muz')\">\n        <span>Muz<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Portakal')\">\n        <span>Portakal<\/span>\n    <\/li>\n    <li class=\"answer\" onclick=\"selectAnswer(this, 'https:\/\/www.google.com\/search?q=Çilek')\">\n        <span>Çilek<\/span>\n    <\/li>\n<\/ul>\n\n<script>\n    function selectAnswer(answerElement, url) {\n        const answerItems = document.querySelectorAll('.answer');\n        answerItems.forEach(item => {\n            item.classList.remove('selected');\n        });\n        answerElement.classList.add('selected');\n\n        \/\/ Tarayıcıyı yeni bir URL'ye yönlendir.\n        window.location.href = url;\n    }\n<\/script>\n<\/div>\n{% endif %}"
+      }
+    }
+  },
+  "order": [
+    "f5fd458e-46a2-4d26-bc48-9492fa2d4dc9",
+    "slideshow-1",
+    "text-columns-with-images",
+    "image-with-text-1",
+    "logo-list",
+    "slideshow-2",
+    "image-with-features",
+    "quote",
+    "slideshow-3",
+    "image-with-text-2",
+    "featured-collection",
+    "slideshow-4",
+    "featured-product",
+    "testimonials",
+    "slideshow-5",
+    "image-with-text-3",
+    "questions",
+    "slideshow-6",
+    "social-proof",
+    "87e35f0b-5de3-4190-a618-9f4b73eec084"
+  ]
+}
