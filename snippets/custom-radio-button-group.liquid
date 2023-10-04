@@ -1,12 +1,13 @@
 <body>
-  <div id="question-container">
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="progress-text" id="progress-text">0/0</div>
+  </div>
+  <div id="question-container" style="margin-top: 40px;">
     <p id="question-text">Ardayı seviyor musun?</p>
     <button class="button grow-shrink" onclick="nextQuestion(this, 'Evet')">Evet</button>
     <button class="button grow-shrink" onclick="nextQuestion(this, 'Hayır')">Hayır</button>
     <button class="button grow-shrink" onclick="nextQuestion(this, 'Belirsiz')">Belirsiz</button>
-  </div>
-  <div class="progress-container">
-    <div class="progress-bar" id="progress-bar"></div>
   </div>
   <div id="result-container" style="display: none;">
     <h2>Sonuçlar:</h2>
@@ -76,6 +77,7 @@
     const resultContainer = document.getElementById("result-container");
     const answersList = document.getElementById("answers-list");
     const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
 
     function showQuestion(index) {
       const currentQuestion = questionsAndAnswers[index];
@@ -84,6 +86,13 @@
         button.textContent = currentQuestion.answers[i];
         button.classList.remove("selected");
       });
+
+// İlerleme metnini güncelle
+      progressText.textContent = `${
+        index + 1
+      }/${
+        questionsAndAnswers.length
+      }`;
     }
 
     function showResults() {
@@ -95,8 +104,10 @@
     function nextQuestion(button, selectedAnswer) {
       userAnswers.push(selectedAnswer);
 
+// Seçilen butona tik işareti ekler
       button.classList.add("selected");
 
+// İlerleme çubuğunu güncelle
       const progressPercentage = ((currentQuestionIndex + 1) / questionsAndAnswers.length) * 100;
       progressBar.style.width = `${progressPercentage}%`;
 

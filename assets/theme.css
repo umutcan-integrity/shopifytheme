@@ -14155,10 +14155,22 @@ a.link:hover {
 .progress-container {
   width: 100%;
   background-color: #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .progress-bar {
   width: 0;
   height: 20px;
   background-color: #00a000;
+}
+
+.progress-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
 }
