@@ -16,15 +16,15 @@
   <script>
     const questionsAndAnswers = [
       {
-        question: "Bu birinci soru mu?",
+        question: "Ardayı seviyor musun?",
         answers: ["Evet", "Hayır", "Belirsiz"]
       },
       {
-        question: "Bu ikinci soru mu?",
+        question: "En sevdiğin asker?",
         answers: ["Evet", "Hayır", "Belirsiz"]
       },
       {
-        question: "Bu üçüncü soru mu?",
+        question: "En büyük asker?",
         answers: ["Evet", "Hayır", "Belirsiz"]
       },
       {
@@ -74,6 +74,18 @@
       if (currentQuestionIndex === questionsAndAnswers.length - 1) {
         nextButton.setAttribute("disabled", true);
       }
+    });
+
+// her cevap seçildiğinde bir animasyon yapıp diğer soruya geçiyoruz
+    const buttons = document.querySelectorAll(".button");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.add("selected");
+        setTimeout(() => {
+          button.classList.remove("selected");
+          nextButton.click();
+        }, 500);
+      });
     });
   </script>
 </body>
