@@ -13,6 +13,8 @@
     <button id="next-button" class="button">Sonraki Soru</button>
   </div>
 
+  <div id="all-answers-container"></div>
+
   <script>
     const questionsAndAnswers = [
       {
@@ -37,10 +39,13 @@
     ];
 
     let currentQuestionIndex = 0;
+    const allAnswers = [];
 
     const questionContainer = document.getElementById("question-container");
     const prevButton = document.getElementById("prev-button");
     const nextButton = document.getElementById("next-button");
+    const allAnswersContainer = document.getElementById("all-answers-container");
+    const answerButtons = questionContainer.querySelectorAll(".button");
 
     function showQuestion(index) {
       const currentQuestion = questionsAndAnswers[index];
@@ -73,21 +78,18 @@
       }
       if (currentQuestionIndex === questionsAndAnswers.length - 1) {
         nextButton.setAttribute("disabled", true);
+        nextButton.innerHTML = "Testi Bitir";
       }
+
+      allAnswers.push(answerButton.innerText);
     });
 
-    questionContainer.addEventListener("click", (event) => {
-      const answerButton = event.target;
-      if (answerButton.classList.contains("button")) {
-        if (currentQuestionIndex < questionsAndAnswers.length - 1) {
-          currentQuestionIndex++;
-          showQuestion(currentQuestionIndex);
-          prevButton.removeAttribute("disabled");
-        }
-
-        if (currentQuestionIndex === questionsAndAnswers.length - 1) {
-          nextButton.setAttribute("disabled", true);
-        }
+    nextButton.addEventListener("click", () => {
+      if (currentQuestionIndex === questionsAndAnswers.length - 1) {
+        const allAnswersText = allAnswers.join(", ");
+        const allAnswersDiv = document.createElement("div");
+        allAnswersDiv.innerHTML = `<p>Verdiğiniz tüm yanıtlar: ${allAnswersText}</p>`;
+        allAnswersContainer.appendChild(allAnswersDiv);
       }
     });
   </script>
