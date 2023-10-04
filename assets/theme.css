@@ -14058,11 +14058,11 @@ a.link:hover {
 }
 
 .grow-shrink:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .grow-shrink:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .button-container {
