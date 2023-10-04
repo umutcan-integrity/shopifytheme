@@ -1,14 +1,79 @@
-<div class="custom-checkbox-button-group">
-  <h2>En sevdiğiniz renkler?</h2>
-  <div class="options">
-    <button class="btn green" type="checkbox" id="green" name="color" value="green" checked>
-      <span class="text">Yeşil</span>
-    </button>
-    <button class="btn blue" type="checkbox" id="blue" name="color" value="blue">
-      <span class="text">Mavi</span>
-    </button>
-    <button class="btn gray" type="checkbox" id="gray" name="color" value="gray">
-      <span class="text">Gri</span>
-    </button>
+<body>
+  <div id="question-container">
+    <p>Bu birinci soru mu?</p>
+    <button class="button">Evet</button>
+    <button class="button">Hayır</button>
+    <button class="button">Belirsiz</button>
+  </div>
+  <div class="button-container">
+    <button
+      id="prev-button"
+      class="button"
+      disabled>Önceki Soru</button>
+    <button id="next-button" class="button">Sonraki Soru</button>
   </div>
 
+  <script>
+    const questionsAndAnswers = [
+      {
+        question: "Bu birinci soru mu?",
+        answers: ["Evet", "Hayır", "Belirsiz"]
+      },
+      {
+        question: "Bu ikinci soru mu?",
+        answers: ["Evet", "Hayır", "Belirsiz"]
+      },
+      {
+        question: "Bu üçüncü soru mu?",
+        answers: ["Evet", "Hayır", "Belirsiz"]
+      },
+      {
+        question: "Bu dördüncü soru mu?",
+        answers: ["Evet", "Hayır", "Belirsiz"]
+      }, {
+        question: "Bu beşinci soru mu?",
+        answers: ["Evet", "Hayır", "Belirsiz"]
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+
+    const questionContainer = document.getElementById("question-container");
+    const prevButton = document.getElementById("prev-button");
+    const nextButton = document.getElementById("next-button");
+
+    function showQuestion(index) {
+      const currentQuestion = questionsAndAnswers[index];
+      const questionText = `<p>${
+        currentQuestion.question
+      }</p>`;
+      const answerButtons = currentQuestion.answers.map(answer => `<button class="button">${answer}</button>`).join('');
+
+      questionContainer.innerHTML = questionText + answerButtons;
+    }
+
+    showQuestion(currentQuestionIndex);
+
+    prevButton.addEventListener("click", () => {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion(currentQuestionIndex);
+        nextButton.removeAttribute("disabled");
+      }
+      if (currentQuestionIndex === 0) {
+        prevButton.setAttribute("disabled", true);
+      }
+    });
+
+    nextButton.addEventListener("click", () => {
+      if (currentQuestionIndex < questionsAndAnswers.length - 1) {
+        currentQuestionIndex++;
+        showQuestion(currentQuestionIndex);
+        prevButton.removeAttribute("disabled");
+      }
+      if (currentQuestionIndex === questionsAndAnswers.length - 1) {
+        nextButton.setAttribute("disabled", true);
+      }
+    });
+  </script>
+</body>
